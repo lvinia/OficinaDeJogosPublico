@@ -10,6 +10,7 @@ public class Super_Kiwi : MonoBehaviour
     private CircleCollider2D circle;
 
     public GameObject Collected;
+    public int Score;
    
     void Start()
     {
@@ -24,8 +25,12 @@ public class Super_Kiwi : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
             Collected.SetActive(true);
+
+            GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
             
-            Destroy(gameObject, 0.3f);
+            
+            Destroy(gameObject, 0.25f);
         }
     }
 }
