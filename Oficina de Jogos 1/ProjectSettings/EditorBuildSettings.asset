@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1 1.unity
     guid: 95cd8b9649bd534439620e8ac99c596e
+  - enabled: 1
+    path: "Assets/Scenes/Anima\xE7\xE3o.unity"
+    guid: f3308fc262e30934988c8bdc519b195b
   m_configObjects: {}
